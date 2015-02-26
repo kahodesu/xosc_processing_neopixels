@@ -1,13 +1,15 @@
-///////////////////////////////////////////////////
-///////  NEOPIXELS WITH XOSC   ////////////////////
-///////////////////////////////////////////////////
-//Based on....                                   //
-//Send Simple Message by Ad Spiers - 12 Feb 2014 //
-//and sent to X-OSC led via OSCP5 and netP5      //
-//oscP5 website at http://www.sojamo.de/oscP5    //
-///////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+///////  NEOPIXELS WITH XOSC   //////////////////////
+/////////////////////////////////////////////////////
+//Based on....                                     //
+//RGB Control with Processing Example              //
+//http://www.x-io.co.uk/rgb-control-with-processing//
+//Send Simple Message by Ad Spiers - 12 Feb 2014   //
+//and sent to X-OSC led via OSCP5 and netP5        //
+//oscP5 website at http://www.sojamo.de/oscP5      //
+/////////////////////////////////////////////////////
 
-//libraries
+//LIBRARIES
 import oscP5.*; 
 import netP5.*; 
 
@@ -23,6 +25,7 @@ void setup() {
   /* IP Address of the X-OSC */
   myRemoteLocation = new NetAddress("169.254.1.1", 9000);
 }
+
 void draw() {
   OscMessage myMessage = new OscMessage("/outputs/rgb/16"); //address pattern
 
